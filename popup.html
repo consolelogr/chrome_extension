@@ -3,33 +3,145 @@
 
 <head>
     <style>
-       
-       body{
-           margin:0; padding:0;
-    
-       }
-        .container {
-            font-size: 3rem;
-            margin: 0rem;
-            min-height: 20rem;
-            min-width: 30rem;
-            outline: none;
-            background:#eaeaea;
-            text-align: center;
-            padding-top: 4rem;
+        @font-face {
+            font-family: noto;
+            src: url(./NotoSans-Regular.ttf);
         }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 10px;
+        }
+
+        a,
+        a:visited {
+            text-decoration: none;
+            color: #111;
+        }
+
+        .container {
+            float: left;
+            font-size: 2rem;
+            margin: 0rem;
+            min-width: 25rem;
+            max-width: 25rem;
+            outline: none;
+            text-align: left;
+            background: linear-gradient(20deg, dodgerblue, yellow);
+            background: url('./bg.png');
+        }
+
+
+
+        .buttonsbox {
+            font-family: noto;
+            font-weight: 300;
+            flex-wrap: wrap;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            margin: 0 auto;
+            align-self: center;
+            padding: 1rem;
+            width: 21rem;
+            justify-content: center;
+        }
+
+        .imagee {
+            width: 50px;
+            padding-right: 1rem;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .buttons {
+
+            align-items: stretch;
+            text-decoration: none;
+            font-size: 1rem;
+            background: linear-gradient(200deg, #2220, #222f);
+            color: #ccc;
+            text-decoration: none;
+            padding: 0.2rem 0.7rem 0.2rem 0.7rem;
+            margin: 0.15rem;
+
+        }
+
+        .buttons:hover {
+            color: #ee0d;
+            transform: scale(1.05);
+        }
+
+        .bottom {
+            color: #eee;
+            font-size: 0.8rem;
+            padding-left: 1rem;
+            text-align: center;
+        }
+
+        #caniuse {}
+
+        #stackoverflow {}
     </style>
+
 </head>
 
 <body>
     <div class="container">
-        Check out my <br> website:
-        <BR>
-        <a href="https://consolelogger.com" target="_blank">
-        
-        Consolelogger.com</a>
+        <div class="buttonsbox">
+            <a href="https://caniuse.com" target="_blank">
+                <div class="buttons" id="caniuse"> Caniuse</div>
+            </a>
+            <a href="https://css-tricks.com" target="_blank">
+                <div class="buttons"> Css-Tricks</div>
+            </a>
+            <a href="https://stackoverflow.com" target="_blank">
+                <div class="buttons">StackOverFlow</div>
+            </a>
+            <a href="https://devdocs.io" target="_blank">
+                <div class="buttons">DevDocs</div>
+            </a>
+            <a href="https://codepen.io" target="_blank">
+                <div class="buttons">CodePen</div>
+            </a>
+            <a href="https://github.com" target="_blank">
+                <div class="buttons">GitHub</div>
+            </a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web" target="_blank">
+                <div class="buttons">MDN</div>
+            </a>
+            <a href="https://freecodecamp.com" target="_blank">
+                <div class="buttons">FreeCodeCamp</div>
+            </a>
+            <a href="https://w3.org" target="_blank">
+                <div class="buttons">W3C</div>
+            </a>
+
+            </a>
+            <a href="https://www.colourlovers.com/" target="_blank">
+                <div class="buttons">ColourLovers</div>
+            </a>
+            <a href="https://pixabay.com/" target="_blank">
+                <div class="buttons">Pixabay</div>
+            </a>
+            </a>
+            <a href="https://fonts.google.com/" target="_blank">
+                <div class="buttons">Google Fonts</div>
+            </a>
+            <a href="https://code.visualstudio.com/" target="_blank">
+                <div class="buttons">VScode</div>
+            </a>
+
+
+
+        </div>
+
     </div>
-    
+
+
+    </div>
+
 </body>
 
 </html>
